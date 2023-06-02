@@ -41,7 +41,9 @@ El código se divide en tres archivos principales, y tres extras:
 - `operaciones_BD.py`: Define las funciones para interactuar con la base de datos, como insertar y actualizar datos.
 
  Extra 1 `crear_tablas.py`: script que se llama una sola vez, para crear las tablas.
+
  Extra 2 `requeriments.txt`: Dependencias del proyecto 
+ 
  Extra 3 `.env`: variables para la conexión a la BD. (Éste lo debes crear tu mismo, en el siguiente punto te  explicamos cómo hacerlo).
 
 ## Cómo Ejecutar la Aplicación 🚀
