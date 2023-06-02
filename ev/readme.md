@@ -34,17 +34,48 @@ La aplicación ofrece las siguientes funcionalidades a través de un menú inter
 
 ## Estructura del Código 📚
 
-El código se divide en tres archivos principales, y uno extra:
+El código se divide en tres archivos principales, y tres extras:
 
 - `main.py`: Contiene la lógica principal del programa, incluyendo el menú interactivo.
 - `coneccion_BD.py`: Establece la conexión con la base de datos.
 - `operaciones_BD.py`: Define las funciones para interactuar con la base de datos, como insertar y actualizar datos.
 
- Extra `crear_tablas.py`: script que se llama una sola vez, para crear las tablas.
+ Extra 1 `crear_tablas.py`: script que se llama una sola vez, para crear las tablas.
+ Extra 2 `requeriments.txt`: Dependencias del proyecto 
+ Extra 3 `.env`: variables para la conexión a la BD. (Éste lo debes crear tu mismo, en el siguiente punto te  explicamos cómo hacerlo).
 
 ## Cómo Ejecutar la Aplicación 🚀
 
-Para ejecutar la aplicación, simplemente navega hasta el directorio del proyecto en tu terminal y ejecuta primero el script `crear_tablas.py` y luego `main.py`, con Python:
+### 1 - Configuración de la Base de Datos 🗄️
+
+Para configurar la conexión a la base de datos, este proyecto utiliza un archivo `.env`. Deberás crear tu propio archivo `.env` en el directorio raíz del proyecto y configurar las variables de entorno para tu base de datos.
+
+Aquí te mostramos cómo hacerlo:
+
+1. En el directorio raíz del proyecto, crea un nuevo archivo y nómbralo `.env`.
+2. Abre el archivo `.env` y añade las siguientes líneas, reemplazando los valores de ejemplo con las credenciales de tu base de datos:
+
+    ```env
+    DB_NAME=nombre_de_tu_base_de_datos
+    DB_USER=usuario_de_tu_base_de_datos
+    DB_PASSWORD=contraseña_de_tu_base_de_datos
+    DB_HOST=host_de_tu_base_de_datos
+    DB_PORT=puerto_de_tu_base_de_datos
+    ```
+
+3. Guarda y cierra el archivo `.env`. La aplicación ahora debería ser capaz de acceder a tu base de datos utilizando las credenciales que proporcionaste.
+
+###2 -  Instalación de las Dependencias 📦
+
+Este proyecto requiere algunas bibliotecas externas de Python para funcionar correctamente. Puedes instalar estas bibliotecas utilizando `pip`, el gestor de paquetes de Python.
+
+Para instalar las dependencias del proyecto, navega hasta el directorio raíz del proyecto en tu terminal y ejecuta el siguiente comando:
+
+```bash
+pip install -r requirements.txt
+```
+### 3 - Ejecutar la aplicación
+Simplemente navega hasta el directorio del proyecto en tu terminal y ejecuta primero el script `crear_tablas.py` y luego `main.py`, con Python:
 
 ```bash
 python main.py
