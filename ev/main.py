@@ -44,6 +44,7 @@ def main():
             input('Presiona Enter para continuar...')
         
         elif option == "5":
+            lista_are(conn)
             area_id = input("Ingresa el ID del área a actualizar: ")
             nuevo_nombre = input("Ingresa el nuevo nombre del área: ")
             nueva_ubicacion = input("Ingresa la nueva ubicación del área: ")
@@ -52,6 +53,7 @@ def main():
             input('Presiona Enter para volver al menu...')
 
         elif option == "6":
+            listar_emp(conn)
             empleado_id = input("Ingresa el ID del empleado a actualizar: ")
             nuevo_nombre = input("Ingresa el nuevo nombre del empleado: ")
             nuevo_id_area = input("Ingresa el nuevo ID de área para el empleado: ")
