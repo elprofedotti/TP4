@@ -2,3 +2,4 @@ ev/lib
 ev/Scripts
 ev/.env
 linkAgithub.txt
+.gitignore
